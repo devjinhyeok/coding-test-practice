@@ -48,10 +48,10 @@ input의 수에 따라 시간이 증가하는 Linear Time Complexity 를 가진�
 # Big O
 시간복잡도의 표현 방법
 이를 이용해 알고리즘을 쉽게 분석 비교 할 수 있다.
-러프하게 해석할 필요가 있다.
 ## Constant Time 상수 시간
 input의 수의 관계 없는 step을 가질 때
 Big O는 상수의 수는 상관이 없다. 예를 들어 항상 200개의 step이 필요하다면 O(200)이 아닌 O(1)
+러프하게 해석할 필요가 있다.
 ## Linear Time 선형 시간
 Linear Search => O(n)
 ## Quadratic Time 이차 시간
@@ -60,4 +60,23 @@ O(n^2)
 ## Logarithmic Time 로그 시간
 binary search algorithm
 O(log n)
+## Comparing Big O
 ![](https://i.imgur.com/b1q2NZr.png)
+
+# Sorting Algorithm
+Sorting = 정렬
+## Bubble Sort 버블 정렬
+인접한 두 요소를 비교하고 사이클 반복
+사실 느려서 자주 안쓰이지만 이해하기 좋다.
+![bubblesort](https://res.cloudinary.com/practicaldev/image/fetch/s--AXL0Lmqr--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://miro.medium.com/max/388/1%2A7QsZkfrRGhAu5yxxeDdzsA.png)
+## Selection Sort 선택 정렬
+요소들을 순회하고 최소값을 찾아(Selection) 앞으로 당긴다.
+사이클 당 1번의 swap을 진행
+![selectionsort](https://gmlwjd9405.github.io/images/algorithm-selection-sort/selection-sort.png)
+## Insertion Sort 삽입 정렬
+요소들 앞에서부터 차례대로 정렬된 부분과 비교하여 자기 자리를 찾아 삽입하는 정렬
+![insertionsort](https://blog.kakaocdn.net/dn/buodfM/btqGY7Q9INs/XCjG7kqRKLyKeVmSZBYaQ0/img.png)
+## Case에 따른 시간 복잡도 차이
+![sortcase](https://mblogthumb-phinf.pstatic.net/MjAyMDA3MThfMjQy/MDAxNTk1MDczMjU0MTYx.pcjqvEiYhQO-89UTke6AxOVGJdBShe_YVefRv23NN-Ag.aJUGHKJRHsMPQfCS-qsC5l6CotPtTIvfhoPZ0M3S8Zsg.PNG.yoochansong/image.png?type=w800)
+
+# Hash Table
