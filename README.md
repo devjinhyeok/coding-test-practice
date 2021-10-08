@@ -1,8 +1,8 @@
-## Algorithm vs Data Structure
-### Algorithm
+# Algorithm, Data Structure
+## Algorithm
 Algorithm = 여러 개의 지시사항
 ex: 길찾기, 암호 등
-### Data Structure
+## Data Structure
 data를 어디서든 다룬다. frontend든 backend든
 data를 어떻게 다루냐에 따라 속도가 달라진다.
 data 구조에 맞는 각각의 작업들이 다르다. (검색, 수정, 추가 등)
@@ -49,10 +49,15 @@ input의 수에 따라 시간이 증가하는 Linear Time Complexity 를 가진�
 시간복잡도의 표현 방법
 이를 이용해 알고리즘을 쉽게 분석 비교 할 수 있다.
 러프하게 해석할 필요가 있다.
-## 예시
-### Constant Time 상수 시간
+## Constant Time 상수 시간
 input의 수의 관계 없는 step을 가질 때
 Big O는 상수의 수는 상관이 없다. 예를 들어 항상 200개의 step이 필요하다면 O(200)이 아닌 O(1)
-### Linear Time 선형 시간
-Linear Search => O(N)
-### Quadratic Time 이차 시간
+## Linear Time 선형 시간
+Linear Search => O(n)
+## Quadratic Time 이차 시간
+nested loop의 경우 발생
+O(n^2)
+## Logarithmic Time 로그 시간
+binary search algorithm
+O(log n)
+![](https://i.imgur.com/b1q2NZr.png)
