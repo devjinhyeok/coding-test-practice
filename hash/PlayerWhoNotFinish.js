@@ -1,3 +1,7 @@
 function solution(participant, completion) {
+
 }
-console.log('asdf');
+
+/*
+결과 = 전체선수 - 완주
+*/
