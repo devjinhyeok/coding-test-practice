@@ -25,11 +25,9 @@ index로 바로 값에 접근, 즉 배열의 요소의 수의 상관이 없이 �
 맨 뒤에 데이터를 추가할 경우 바로 추가할 경우 index를 당길 필요가 없음
 중간에 추가하거나, 맨 앞에 추가할 경우 index를 밀어야 하므로 오래 걸림
 배열 할당 길이를 벗어날 경우 더 큰 메모리를 할당해서 배열을 복사함.
-
 ### Delete
 insert와 마찬가지로 맨 뒤를 지울 경우 가장 빠르고,
 요소들의 이동이 있는 경우 느리다.
-
 ### 결론
 배열은 Reading이 빠르다.
 Insert나 Delete의 작업은 맨 뒤에서 하는 것을 권장한다.
@@ -80,3 +78,26 @@ Sorting = 정렬
 ![sortcase](https://mblogthumb-phinf.pstatic.net/MjAyMDA3MThfMjQy/MDAxNTk1MDczMjU0MTYx.pcjqvEiYhQO-89UTke6AxOVGJdBShe_YVefRv23NN-Ag.aJUGHKJRHsMPQfCS-qsC5l6CotPtTIvfhoPZ0M3S8Zsg.PNG.yoochansong/image.png?type=w800)
 
 # Hash Table
+해시테이블은 Key Value System을 사용한다. (like object in js, dictionary is python, map in java, go)
+## Array와 Hash table의 비교 예시
+```js
+menu = [ // array
+  { name: "coffee", price: 10 },
+  { name: "burger", price: 15 },
+  { name: "tea", price: 5 },
+];
+```
+검색 시 선형탐색을 하므로 O(n) > 느림
+```js
+menu = { // hash table
+  coffee: 10,
+  burger: 15,
+  tea, 5
+}
+```
+검색 시 메뉴명으로 바로 접근하므로 O(1) > 빠름
+수정, 삭제도 마찬가지
+## Hash table의 원리
+내부적으로는 Array로 이뤄져있다. 그런데 이게 왜 Array보다 빠른 것인가?
+### Hash Function
+해시 함수는 키를 숫자, 즉 인덱스로 바꿔버린다.
