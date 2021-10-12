@@ -101,3 +101,16 @@ menu = { // hash table
 내부적으로는 Array로 이뤄져있다. 그런데 이게 왜 Array보다 빠른 것인가?
 ### Hash Function
 해시 함수는 키를 숫자, 즉 인덱스로 바꿔버린다.
+
+# Queue & Stack
+큐와 스택은 ADT(Abstract Data Type)인데, 구체적으로 코드로 작성 된 것이 아닌, 구조의 행동 양식만 정의한 데이터 구조를 말한다.
+## Stack
+이름 그대로 쌓인 형태이다. 가장 위의 요소만 읽기, 추가, 삭제가 가능하다.
+LiFo, Last in First out
+### 사용 예시 
+브라우저의 히스토리, 프로그램의 Undo 기능
+## Queue
+대기열을 생각하면 된다. 맨 앞 요소만 읽기, 삭제가 가능하고, 추가는 맨 뒤에서 일어난다.
+FiFo, First in First out
+### 사용 예시
+푸쉬 알림, OS의 프로세스 스케줄링, 전화상담 대기열
